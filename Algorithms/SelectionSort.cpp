@@ -4,7 +4,7 @@ using namespace std;
 
 
 void selectionSort(int arr[], int length) {
-    for (int i = 0; i <= length; i++) {
+    for (int i = 0; i < length; i++) {
         int lowIndex = i;
         int lowVal = arr[i];
 
