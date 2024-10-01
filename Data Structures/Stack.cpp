@@ -43,15 +43,21 @@ class Stack {
 int main() {
     Stack stack;
 
-    stack.push(3);               
-    stack.push(4);               
-    cout << stack.read() << endl; 
+    for (int i = 1; i <= 5; i++) {
+        stack.push(i);
+    }
 
-    stack.pop();                 
-    cout << stack.read() << endl; 
+    int arr[5] = {};
+    for (int i = 0; i < 5; i++) {
+        arr[i] = stack.read();
+        stack.pop();
+    }
 
-    stack.pop();                 
-    cout << stack.read() << endl; 
+    for (int i = 0; i < 5; i++) {
+        cout << arr[i] << " ";
+    }
+
+    cout << endl;
 
     return 0;
 }
